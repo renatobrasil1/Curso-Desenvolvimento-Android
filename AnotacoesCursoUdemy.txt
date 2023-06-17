@@ -1,0 +1,15 @@
+Anotaçoes do curso da udemy
+
+configurações de permisões ....> app/manifest-->AndroidManifest.xml(acesso a interntm qual sera a 1º tela que ira aparecer)
+java/ temos 3 (2 de teste) e uma MainActivity
+res/ temos 5 pastas (drawable,layout,mipmap,values)
+drawable----> imagens
+layout------> todos layout do App
+mipmap------> tem 2 pasta 1ª ic_launcher,2ª ic_launcher_round
+values------> temos o (colors.xml---->guarda todas as cores do aplicativo) string.xml------> iremos escrever, botão salvar, botão deletar, aplicativo tal.
+themes----> themes.xml
+
+pasta xml---> backup_rules.xml pode "salvar", data_extraction_rules.xml----> permisoes especificas(isto é uma novidade na vesoes mais novas no android studio )
+
+Gradle Scripts----->em buil.gradle(Project : Apptal)----> apresenta qual é a versão que a gente esta usando (o gradle é um resoçvedor de dependencia) as dependencias fica em build.(module: app)
+
