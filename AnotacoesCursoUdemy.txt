@@ -13,3 +13,14 @@ pasta xml---> backup_rules.xml pode "salvar", data_extraction_rules.xml----> per
 
 Gradle Scripts----->em buil.gradle(Project : Apptal)----> apresenta qual é a versão que a gente esta usando (o gradle é um resoçvedor de dependencia) as dependencias fica em build.(module: app)
 
+Em---> proguard-rules-pro(ProGuard)Rules for nome do palicativo)----> aqui a gente pode cripitografar para as pessoas não conseguir fazer a engenharia reversa.
+
+ local.properties------(SDK localion)caminho do sdk sdk.dir=C\:\\Users\\nato-\\AppData\\Local\\Android\\Sdk
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+trabalhando layout
+entrada de dados ocupar a tela inteira-----> entra em---> layout_width------> match_parent
+Para ajustar as margens margem---->layout_margem--> geralmente a gente pega o 1ª e deixa em 16dp
+tamanho da fonte "letra"----->Size----->textSize 18sp
+-----------------------------------------------------------------------------------------------------------------------------------------------
+durante o desenvolvimento o aplicativo apresenta alguns erros
+ Em    <TextView  tem ------> textandroid:text="Aplicativo lista de Motociclista" este texto não deve ser ai pois se a gente quiser criar este mesmo aplicativo em ingles ou espanhol não ira dar certo, temos que por este texto no arquivo xml-----> com fazer botão direito em ----->Extract string resource 
