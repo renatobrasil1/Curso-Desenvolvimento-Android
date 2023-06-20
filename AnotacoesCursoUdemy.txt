@@ -24,3 +24,10 @@ tamanho da fonte "letra"----->Size----->textSize 18sp
 -----------------------------------------------------------------------------------------------------------------------------------------------
 durante o desenvolvimento o aplicativo apresenta alguns erros
  Em    <TextView  tem ------> textandroid:text="Aplicativo lista de Motociclista" este texto não deve ser ai pois se a gente quiser criar este mesmo aplicativo em ingles ou espanhol não ira dar certo, temos que por este texto no arquivo xml-----> com fazer botão direito em ----->Extract string resource 
+---------------------------------------------------------------------------------------------------------------------------
+quando e eu seleciono uma classe e dou ctrl e B ----> eu sou direcionado para a classe
+Para dulicar uma linha Ctrl + d
+-------------------------------------------------------------------
+Search Everywhere---> significa encontre qualquer coisa
+Quando a gente coloca dados fekes, a gente chama de dados mocados
+
