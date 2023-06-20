@@ -3,7 +3,7 @@
     <string name="txt_titulo">Aplicativo lista de Motociclista</string>
     <string name="txt_hint_edit_primeiro_nome">Primeiro Nome</string>
     <string name="txt_hint_edit_sobrenome">Sobre Nome</string>
-    <string name="txt_hint_edit_nome_da_vaga">Nome da vaga</string>
+    <string name="txt_hint_edit_profissional_desejado">Qual profissional?</string>
     <string name="txt_hint_edit_telefone_de_contato">Telefone de Contato</string>
      <string name="txt_btn_limpar">LIMPAR</string>
     <string name="txt_btn_salvar">SALVAR</string>

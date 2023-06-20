@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/amarelo"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:background="@color/teal_200"
-        android:id="@+id/txttitulo"
+    <TextView android:background="@color/teal_200"
+        android:id="@+id/txtTituloApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_titulo"
@@ -22,8 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <EditText
-        android:id="@+id/editPrimeiroNome"
+    <EditText android:id="@+id/editPrimeiroNome"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -34,11 +32,10 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txttitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloApp"
         android:autofillHints="" />
 
-    <EditText
-        android:id="@+id/editSobreNome"
+    <EditText android:id="@+id/editSobreNome"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_margin="16dp"
@@ -53,13 +50,12 @@
         tools:ignore="TouchTargetSizeCheck"
         android:autofillHints="" />
 
-    <EditText
-        android:id="@+id/editNomeDaVaga"
+    <EditText android:id="@+id/editQualProfissional"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="@string/txt_hint_edit_nome_da_vaga"
+        android:hint="@string/txt_hint_edit_profissional_desejado"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
@@ -68,8 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editSobreNome"
         android:autofillHints="" />
 
-    <EditText
-        android:id="@+id/editTelefoneDeContato"
+    <EditText android:id="@+id/editTelefoneDeContato"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -82,12 +77,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeDaVaga"
+        app:layout_constraintTop_toBottomOf="@+id/editQualProfissional"
         app:layout_constraintVertical_bias="0.105"
         android:autofillHints="" />
 
-    <Button
-        android:id="@+id/btnLimpar"
+    <Button android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -98,8 +92,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnsalvar"
+    <Button android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -113,8 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTelefoneDeContato"
         app:layout_constraintVertical_bias="0.333" />
 
-    <Button
-        android:id="@+id/btnFinalizar"
+    <Button android:id="@+id/btnFinalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -125,6 +117,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txttitulo"
+        app:layout_constraintTop_toTopOf="@+id/txtTituloApp"
         app:layout_constraintVertical_bias="0.806" />
 </androidx.constraintlayout.widget.ConstraintLayout>
