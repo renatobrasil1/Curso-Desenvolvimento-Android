@@ -35,10 +35,7 @@ public class MainActivity extends Activity {
        controller = new PessoaController(); // riando o objeto controller
         controller.toString();
 
-
-
         pessoa = new Pessoa(); // criando um objeto pessoa
-
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("luzia");
         outraPessoa.setSobreNome("silva");
