@@ -8,9 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
 import renato.brasil.com.br.applistamotociclista.model.Pessoa;
 
 public class MainActivity extends Activity {
+
+    PessoaController controller; // estou criando uma estância , ate o momento ela e null
 
     Pessoa pessoa; //declarando  um objeto pessoa
     Pessoa outraPessoa;
@@ -28,6 +31,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       controller = new PessoaController(); // riando o objeto controller
+        controller.toString();
+
+
 
         pessoa = new Pessoa(); // criando um objeto pessoa
 
@@ -71,7 +79,8 @@ public class MainActivity extends Activity {
         });
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 pessoa.setPrimeiroNome(editPrimeiroNome.getText().toString());
                 pessoa.setSobreNome(editSobreNome.getText().toString());
                 pessoa.setProfissionalDesejado(editQualProfissional.getText().toString());
@@ -79,6 +88,7 @@ public class MainActivity extends Activity {
 
                 Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
                 finish();
+                controller.salvar(pessoa); // passando o objeto pessoa para o controller
             }
         });
         Log.i("POOAndroid", "Objeto pessoa :" + pessoa.toString());
