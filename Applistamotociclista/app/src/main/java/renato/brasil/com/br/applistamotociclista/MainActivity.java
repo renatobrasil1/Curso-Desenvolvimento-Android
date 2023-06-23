@@ -40,29 +40,30 @@ public class MainActivity extends Activity {
          SharedPreferences.Editor listaVip = preferences.edit(); // criando o editor
 
 
-       controller = new PessoaController(); // riando o objeto controller
+       controller = new PessoaController(); // criando o objeto controller
         controller.toString();
 
         pessoa = new Pessoa(); // criando um objeto pessoa
-        outraPessoa = new Pessoa();
-        outraPessoa.setPrimeiroNome("luzia");
-        outraPessoa.setSobreNome("silva");
-        outraPessoa.setProfissionalDesejado("lima");
-        outraPessoa.setTelefoneContato("18-981963216");
+
+          pessoa.setPrimeiroNome(preferences.getString("primmeiroNome","não existe ..."));
+          pessoa.setSobreNome(preferences.getString("sobreNome","NA"));
+          pessoa.setProfissionalDesejado(preferences.getString("qualProfissional","NA"));
+          pessoa.setTelefoneContato(preferences.getString("telefoneContato","NA"));
+
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobreNome = findViewById(R.id.editSobreNome);
         editQualProfissional = findViewById(R.id.editQualProfissional);
         editTelefoneDeContato = findViewById(R.id.editTelefoneDeContato);
 
-        btnLimpar = findViewById(R.id.btnLimpar);
-        btnSalvar = findViewById(R.id.btnSalvar);
-        btnFinalizar = findViewById(R.id.btnFinalizar);
-
         editPrimeiroNome.setText(pessoa.getPrimeiroNome());
         editSobreNome.setText(pessoa.getSobreNome());
         editQualProfissional.setText(pessoa.getProfissionalDesejado());
         editTelefoneDeContato.setText(pessoa.getTelefoneContato());
+
+        btnLimpar = findViewById(R.id.btnLimpar);
+        btnSalvar = findViewById(R.id.btnSalvar);
+        btnFinalizar = findViewById(R.id.btnFinalizar);
 
         // pegando o clik do botão
         btnLimpar.setOnClickListener(new View.OnClickListener() {
@@ -105,6 +106,6 @@ public class MainActivity extends Activity {
             }
         });
         Log.i("POOAndroid", "Objeto pessoa :" + pessoa.toString());
-        Log.i("POOAndroid", "Objeto outraPessoa :" + outraPessoa.toString());
+
     }
 }
