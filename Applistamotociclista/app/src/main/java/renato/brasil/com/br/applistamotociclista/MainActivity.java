@@ -1,6 +1,7 @@
 package renato.brasil.com.br.applistamotociclista;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,9 @@ import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
 import renato.brasil.com.br.applistamotociclista.model.Pessoa;
 
 public class MainActivity extends Activity {
+
+    SharedPreferences preferences;
+    public static final String NOME_PREFERENCES = "pref_listamotociclista";
 
     PessoaController controller; // estou criando uma estância , ate o momento ela e null
 
@@ -31,6 +35,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        preferences = getSharedPreferences(NOME_PREFERENCES,0); // o zero é para leitura e escrita
+         SharedPreferences.Editor listaVip = preferences.edit(); // criando o editor
+
 
        controller = new PessoaController(); // riando o objeto controller
         controller.toString();
@@ -85,6 +93,14 @@ public class MainActivity extends Activity {
 
                 Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
                 finish();
+
+                listaVip.putString("primmeiroNome",pessoa.getPrimeiroNome());
+                listaVip.putString("sobreNome",pessoa.getSobreNome());
+                listaVip.putString("qualProfissional",pessoa.getProfissionalDesejado());
+                listaVip.putString("telefoneContato",pessoa.getTelefoneContato());
+
+                listaVip.apply(); // estou salvando o contato
+
                 controller.salvar(pessoa); // passando o objeto pessoa para o controller
             }
         });
