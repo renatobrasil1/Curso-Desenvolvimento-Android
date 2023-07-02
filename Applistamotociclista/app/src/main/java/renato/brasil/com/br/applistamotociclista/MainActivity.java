@@ -9,8 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.List;
+
 import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
+import renato.brasil.com.br.applistamotociclista.controller.ProfissionalController;
 import renato.brasil.com.br.applistamotociclista.model.Pessoa;
+import renato.brasil.com.br.applistamotociclista.model.Profissional;
 
 public class MainActivity extends Activity {
 
@@ -18,8 +22,11 @@ public class MainActivity extends Activity {
     public static final String NOME_PREFERENCES = "pref_listamotociclista";
 
     PessoaController controller; // estou criando uma estância , ate o momento ela e null
+    ProfissionalController profissionalController;
 
     Pessoa pessoa; //declarando  um objeto pessoa
+    List<Profissional>listaDeProfissionais;
+
     Pessoa outraPessoa;
     // EditText é uma classe que faz parte  da classe android widget
     EditText editPrimeiroNome;
@@ -43,7 +50,12 @@ public class MainActivity extends Activity {
        controller = new PessoaController(); // criando o objeto controller
         controller.toString();
 
+        profissionalController = new ProfissionalController();
+         listaDeProfissionais = profissionalController.getListaDeProfissionais();
+
         pessoa = new Pessoa(); // criando um objeto pessoa
+
+        //controller.buscar(pessoa);
 
           pessoa.setPrimeiroNome(preferences.getString("primmeiroNome","não existe ..."));
           pessoa.setSobreNome(preferences.getString("sobreNome","NA"));
