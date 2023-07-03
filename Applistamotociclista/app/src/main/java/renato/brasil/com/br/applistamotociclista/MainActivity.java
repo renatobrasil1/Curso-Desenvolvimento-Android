@@ -5,8 +5,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.List;
@@ -14,7 +16,6 @@ import java.util.List;
 import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
 import renato.brasil.com.br.applistamotociclista.controller.ProfissionalController;
 import renato.brasil.com.br.applistamotociclista.model.Pessoa;
-import renato.brasil.com.br.applistamotociclista.model.Profissional;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +26,10 @@ public class MainActivity extends Activity {
     ProfissionalController profissionalController;
 
     Pessoa pessoa; //declarando  um objeto pessoa
-    List<Profissional>listaDeProfissionais;
+
+    List<String> nomesDosProfissionais;
+
+
 
     Pessoa outraPessoa;
     // EditText é uma classe que faz parte  da classe android widget
@@ -37,11 +41,11 @@ public class MainActivity extends Activity {
     Button btnLimpar;
     Button btnSalvar;
     Button btnFinalizar;
-
+      Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_spinner);
 
         preferences = getSharedPreferences(NOME_PREFERENCES,0); // o zero é para leitura e escrita
          SharedPreferences.Editor listaVip = preferences.edit(); // criando o editor
@@ -51,22 +55,17 @@ public class MainActivity extends Activity {
         controller.toString();
 
         profissionalController = new ProfissionalController();
-         listaDeProfissionais = profissionalController.getListaDeProfissionais();
+         nomesDosProfissionais = profissionalController.dadosParaSpinner();
 
         pessoa = new Pessoa(); // criando um objeto pessoa
 
         //controller.buscar(pessoa);
 
-          pessoa.setPrimeiroNome(preferences.getString("primmeiroNome","não existe ..."));
-          pessoa.setSobreNome(preferences.getString("sobreNome","NA"));
-          pessoa.setProfissionalDesejado(preferences.getString("qualProfissional","NA"));
-          pessoa.setTelefoneContato(preferences.getString("telefoneContato","NA"));
-
-
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobreNome = findViewById(R.id.editSobreNome);
         editQualProfissional = findViewById(R.id.editQualProfissional);
         editTelefoneDeContato = findViewById(R.id.editTelefoneDeContato);
+        spinner = findViewById((R.id.spinner));
 
         editPrimeiroNome.setText(pessoa.getPrimeiroNome());
         editSobreNome.setText(pessoa.getSobreNome());
@@ -76,6 +75,16 @@ public class MainActivity extends Activity {
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
+
+        // Adpter
+        // Layout
+        // Iniciar o adapter ao Sprinner - A lista gerar
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
+        profissionalController.dadosParaSpinner());
+
+        adapter.setDropDownViewResource(android.R.layout.simple_list_item_1);
+
+              spinner.setAdapter((adapter));
 
         // pegando o clik do botão
         btnLimpar.setOnClickListener(new View.OnClickListener() {

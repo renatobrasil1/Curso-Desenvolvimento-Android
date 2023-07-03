@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Applistamotociclista</string>
-    <string name="txt_titulo">Aplicativo lista de Motociclista</string>
+    <string name="app_name">AppMotoTaxi1601</string>
+    <string name="txt_titulo">Profissionais do Amarelinho</string>
     <string name="txt_hint_edit_primeiro_nome">Primeiro Nome</string>
     <string name="txt_hint_edit_sobrenome">Sobre Nome</string>
     <string name="txt_hint_edit_profissional_desejado">Qual profissional?</string>
@@ -8,4 +8,5 @@
      <string name="txt_btn_limpar">LIMPAR</string>
     <string name="txt_btn_salvar">SALVAR</string>
     <string name="txt_btn_finalizar">FINALIZAR</string>
-    </resources>
+    <string name="txt_selecione_um_profissional">Selecione um Profissional...</string>
+</resources>

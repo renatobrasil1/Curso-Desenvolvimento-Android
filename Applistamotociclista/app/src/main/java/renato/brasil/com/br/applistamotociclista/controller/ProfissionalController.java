@@ -25,4 +25,15 @@ public class ProfissionalController {
 
         return listProfissionais;
     }
+    public ArrayList<String> dadosParaSpinner(){
+
+        ArrayList<String> dados = new ArrayList<>();
+
+        for (int i = 0; i < getListaDeProfissionais().size() ; i++) {
+            Profissional objeto = (Profissional) getListaDeProfissionais().get(i);
+            dados.add(objeto.getNomeDoprofissionalDesejado());
+        }
+
+        return  dados;
+    }
 }
