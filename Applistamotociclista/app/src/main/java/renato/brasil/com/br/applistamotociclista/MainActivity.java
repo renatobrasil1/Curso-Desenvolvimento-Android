@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spinner);
+        setContentView(R.layout.activity_spinner); // ao iniciar chama atela activity_spinner
 
         preferences = getSharedPreferences(NOME_PREFERENCES,0); // o zero é para leitura e escrita
          SharedPreferences.Editor listaVip = preferences.edit(); // criando o editor
