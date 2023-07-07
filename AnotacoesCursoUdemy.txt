@@ -36,7 +36,19 @@ Quando a gente coloca dados fekes, a gente chama de dados mocados
 --------------------------------------------------------------------------------
 Iniciando a seção 5 aprendendo o branch no git
 -------------------------------------------------------------------------
-trabalhando co recurso SheredPreferences -------> compartilhar as preferencias----> é um arquivo xml
+trabalhando com recurso SheredPreferences -------> compartilhar as preferencias----> é um arquivo xml
+
+Na sesão 6 aula 50
+ explicação sobre linear layout ---> tem 2 orientação vertical ou horizontal  quando a gente muda do layout contraintlayout
+para linear a gente tem que add ------> android: orientation  = "vertical"
+
+Na sesão 6 aula 50
+Quando o os componentes nao aparece temos que utilizar <ScrollView </ScrollView> -----> seu tiver varios componentes o scrollView nao da certo,  eu tenho que por os componentes  dentro do um linear layout----> e o linearLayout deve ficardentro do scrollView
+Fazendo um ajuste podemos colocar os botoes dentro de um linear layout e por a orientation = "horizontal"
+
+
+
+
 
 
 
