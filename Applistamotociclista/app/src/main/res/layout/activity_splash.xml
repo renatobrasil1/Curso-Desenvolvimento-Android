@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/amarelo"
     tools:context=".view.SplashActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
-        android:background="@color/amarelo"
+        android:background="@color/teal_200"
         android:gravity="center"
         android:text="Seja Bem Vindo ao Moto Taxi 1601"
         android:textColor="@color/black"
@@ -39,11 +40,12 @@
         android:id="@+id/imageView3"
         android:layout_width="370dp"
         android:layout_height="264dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/mototaxi1601" />
+        app:srcCompat="@drawable/mototaxi1601"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
