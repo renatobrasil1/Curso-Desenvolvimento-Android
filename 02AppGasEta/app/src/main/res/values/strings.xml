@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AppGasEta</string>
+    <string name="txt_titulo">Gasolina X Etanol</string>
+    <string name="txt_hint_edit_gasolina">R$ Gasolina</string>
+    <string name="txt_hint_edit_etanol">R$ Etanol</string>
+    <string name="txt_hint_edit_profissional_desejado">Qual profissional?</string>
+    <string name="txt_hint_edit_telefone_de_contato">Telefone de Contato</string>
+    <string name="txt_btn_limpar">LIMPAR</string>
+    <string name="txt_btn_calcular">Calcular</string>
+    <string name="txt_btn_salvar">SALVAR</string>
+    <string name="txt_btn_finalizar">FINALIZAR</string>
+    <string name="txt_resultado">Resultado</string>
+    <string name="selecione_um_profissional">Selecione um Profissional</string>
+    <string name="txt_juntos_iremos_economizar">Juntos iremos economizar...</string>
+    <string name="ltxt_ogmototaxi">logMototaxi</string>
+    <string name="txt_apresentando_a_melhor_op_o">Apresentando a Melhor opção...</string>
+</resources>
