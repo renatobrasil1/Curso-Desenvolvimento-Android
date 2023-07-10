@@ -1,0 +1,177 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@color/white\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/txtTituloApp\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:background=\"@color/teal_200\"\r\n        android:text=\"@string/txt_titulo\"\r\n        android:textSize=\"18sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.425\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.022\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/editPrimeiroNome\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"48dp\"\r\n        android:layout_margin=\"16dp\"\r\n        android:autofillHints=\"\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/txt_hint_edit_primeiro_nome\"\r\n        android:inputType=\"textPersonName\"\r\n        android:minHeight=\"48dp\"\r\n        android:textColorHint=\"#757575\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/txtTituloApp\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/editSobreNome\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"45dp\"\r\n        android:layout_margin=\"16dp\"\r\n        android:autofillHints=\"\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/txt_hint_edit_sobrenome\"\r\n        android:inputType=\"textPersonName\"\r\n        android:minHeight=\"48dp\"\r\n        android:textColorHint=\"#757575\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/editPrimeiroNome\"\r\n        tools:ignore=\"TouchTargetSizeCheck\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/editQualProfissional\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"48dp\"\r\n        android:layout_margin=\"16dp\"\r\n        android:autofillHints=\"\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/txt_hint_edit_profissional_desejado\"\r\n        android:inputType=\"textPersonName\"\r\n        android:minHeight=\"48dp\"\r\n        android:textColorHint=\"#757575\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/editSobreNome\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/editTelefoneDeContato\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"48dp\"\r\n        android:layout_margin=\"16dp\"\r\n        android:autofillHints=\"\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/txt_hint_edit_telefone_de_contato\"\r\n        android:inputType=\"textPersonName\"\r\n        android:minHeight=\"48dp\"\r\n        android:textColorHint=\"#757575\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/btnLimpar\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.093\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/editQualProfissional\"\r\n        app:layout_constraintVertical_bias=\"0.105\" />\r\n    <TextView\r\n        android:id=\"@+id/textView\"\r\n        android:layout_width=\"281dp\"\r\n        android:layout_height=\"39dp\"\r\n        android:text=\"Selecione um Profissional\"\r\n        android:textSize=\"20sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        tools:layout_editor_absoluteY=\"329dp\" />\r\n\r\n    <Spinner\r\n        android:id=\"@+id/spinner\"\r\n        android:layout_width=\"409dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginBottom=\"40dp\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/btnSalvar\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView\"\r\n        app:layout_constraintVertical_bias=\"1.0\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/btnLimpar\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"28dp\"\r\n        android:layout_marginBottom=\"40dp\"\r\n        android:background=\"@color/black\"\r\n        android:text=\"@string/txt_btn_limpar\"\r\n        android:textColor=\"#F44336\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/btnFinalizar\"\r\n        app:layout_constraintStart_toStartOf=\"parent\" />\r\n\r\n    <Button\r\n\r\n        android:id=\"@+id/btnSalvar\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:background=\"@color/black\"\r\n        android:text=\"@string/txt_btn_salvar\"\r\n        android:textColor=\"#FF5722\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/btnFinalizar\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.919\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/btnLimpar\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/editTelefoneDeContato\"\r\n        app:layout_constraintVertical_bias=\"0.787\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/btnFinalizar\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_margin=\"16dp\"\r\n\r\n        android:background=\"@color/teal_700\"\r\n        android:text=\"@string/txt_btn_finalizar\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"@+id/txtTituloApp\"\r\n        app:layout_constraintVertical_bias=\"0.806\" />\r\n\r\n\r\n\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	
++++ b/app/src/main/res/layout/activity_main.xml	
+@@ -84,16 +84,19 @@
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/editQualProfissional"
+         app:layout_constraintVertical_bias="0.105" />
++
+     <TextView
+         android:id="@+id/textView"
+         android:layout_width="281dp"
+         android:layout_height="39dp"
++        android:layout_marginTop="44dp"
+         android:text="Selecione um Profissional"
+         android:textSize="20sp"
+         android:textStyle="bold"
+         app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.43"
+         app:layout_constraintStart_toStartOf="parent"
+-        tools:layout_editor_absoluteY="329dp" />
++        app:layout_constraintTop_toBottomOf="@+id/editTelefoneDeContato" />
+ 
+     <Spinner
+         android:id="@+id/spinner"
+@@ -134,7 +137,7 @@
+         app:layout_constraintHorizontal_bias="0.919"
+         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
+         app:layout_constraintTop_toBottomOf="@+id/editTelefoneDeContato"
+-        app:layout_constraintVertical_bias="0.787" />
++        app:layout_constraintVertical_bias="0.852" />
+ 
+     <Button
+         android:id="@+id/btnFinalizar"
+@@ -149,9 +152,7 @@
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/txtTituloApp"
+-        app:layout_constraintVertical_bias="0.806" />
+-
+-
++        app:layout_constraintVertical_bias="0.952" />
+ 
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/renato/brasil/com/br/applistamotociclista/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package renato.brasil.com.br.applistamotociclista;\r\n\r\nimport android.app.Activity;\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.Toast;\r\n\r\nimport renato.brasil.com.br.applistamotociclista.controller.PessoaController;\r\nimport renato.brasil.com.br.applistamotociclista.model.Pessoa;\r\n\r\npublic class MainActivity extends Activity {\r\n\r\n    PessoaController controller; // estou criando uma estância , ate o momento ela e null\r\n\r\n    Pessoa pessoa; //declarando  um objeto pessoa\r\n    Pessoa outraPessoa;\r\n    // EditText é uma classe que faz parte  da classe android widget\r\n    EditText editPrimeiroNome;\r\n    EditText editSobreNome;\r\n    EditText editQualProfissional;\r\n    EditText editTelefoneDeContato;\r\n\r\n    Button btnLimpar;\r\n    Button btnSalvar;\r\n    Button btnFinalizar;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n\r\n       controller = new PessoaController(); // riando o objeto controller\r\n        controller.toString();\r\n\r\n        pessoa = new Pessoa(); // criando um objeto pessoa\r\n\r\n        outraPessoa = new Pessoa();\r\n        outraPessoa.setPrimeiroNome(\"luzia\");\r\n        outraPessoa.setSobreNome(\"silva\");\r\n        outraPessoa.setProfissionalDesejado(\"lima\");\r\n        outraPessoa.setTelefoneContato(\"18-981963216\");\r\n\r\n        editPrimeiroNome = findViewById(R.id.editPrimeiroNome);\r\n        editSobreNome = findViewById(R.id.editSobreNome);\r\n        editQualProfissional = findViewById(R.id.editQualProfissional);\r\n        editTelefoneDeContato = findViewById(R.id.editTelefoneDeContato);\r\n\r\n        btnLimpar = findViewById(R.id.btnLimpar);\r\n        btnSalvar = findViewById(R.id.btnSalvar);\r\n        btnFinalizar = findViewById(R.id.btnFinalizar);\r\n\r\n        editPrimeiroNome.setText(pessoa.getPrimeiroNome());\r\n        editSobreNome.setText(pessoa.getSobreNome());\r\n        editQualProfissional.setText(pessoa.getProfissionalDesejado());\r\n        editTelefoneDeContato.setText(pessoa.getTelefoneContato());\r\n\r\n        // pegando o clik do botão\r\n        btnLimpar.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                editPrimeiroNome.setText(\"\");\r\n                editSobreNome.setText(\"\");\r\n                editQualProfissional.setText(\"\");\r\n                editTelefoneDeContato.setText(\"\");\r\n            }\r\n        });\r\n\r\n        btnFinalizar.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                Toast.makeText(MainActivity.this, \"Volte Sempre\", Toast.LENGTH_LONG).show();\r\n                finish();\r\n            }\r\n        });\r\n        btnSalvar.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view)\r\n            {\r\n                pessoa.setPrimeiroNome(editPrimeiroNome.getText().toString());\r\n                pessoa.setSobreNome(editSobreNome.getText().toString());\r\n                pessoa.setProfissionalDesejado(editQualProfissional.getText().toString());\r\n                pessoa.setTelefoneContato(editTelefoneDeContato.getText().toString());\r\n\r\n                Toast.makeText(MainActivity.this, \"Salvo\" + pessoa.toString(), Toast.LENGTH_LONG).show();\r\n                finish();\r\n                controller.salvar(pessoa); // passando o objeto pessoa para o controller\r\n            }\r\n        });\r\n        Log.i(\"POOAndroid\", \"Objeto pessoa :\" + pessoa.toString());\r\n        Log.i(\"POOAndroid\", \"Objeto outraPessoa :\" + outraPessoa.toString());\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/renato/brasil/com/br/applistamotociclista/MainActivity.java b/app/src/main/java/renato/brasil/com/br/applistamotociclista/MainActivity.java
+--- a/app/src/main/java/renato/brasil/com/br/applistamotociclista/MainActivity.java	
++++ b/app/src/main/java/renato/brasil/com/br/applistamotociclista/MainActivity.java	
+@@ -8,15 +8,22 @@
+ import android.widget.EditText;
+ import android.widget.Toast;
+ 
++import java.util.List;
++
+ import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
++import renato.brasil.com.br.applistamotociclista.controller.ProfissionalController;
+ import renato.brasil.com.br.applistamotociclista.model.Pessoa;
+ 
+ public class MainActivity extends Activity {
+ 
+     PessoaController controller; // estou criando uma estância , ate o momento ela e null
++    ProfissionalController profissionalController;
++
+ 
+     Pessoa pessoa; //declarando  um objeto pessoa
++    List<String> nomesDosProfissionais;
+     Pessoa outraPessoa;
++
+     // EditText é uma classe que faz parte  da classe android widget
+     EditText editPrimeiroNome;
+     EditText editSobreNome;
+@@ -35,15 +42,14 @@
+        controller = new PessoaController(); // riando o objeto controller
+         controller.toString();
+ 
++        profissionalController = new ProfissionalController();
++
++
+         pessoa = new Pessoa(); // criando um objeto pessoa
++       // controller.buscar(pessoa);
+ 
+-        outraPessoa = new Pessoa();
+-        outraPessoa.setPrimeiroNome("luzia");
+-        outraPessoa.setSobreNome("silva");
+-        outraPessoa.setProfissionalDesejado("lima");
+-        outraPessoa.setTelefoneContato("18-981963216");
+ 
+-        editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
++         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
+         editSobreNome = findViewById(R.id.editSobreNome);
+         editQualProfissional = findViewById(R.id.editQualProfissional);
+         editTelefoneDeContato = findViewById(R.id.editTelefoneDeContato);
+Index: app/src/main/java/renato/brasil/com/br/applistamotociclista/controller/ProfissionalController.java
+===================================================================
+diff --git a/app/src/main/java/renato/brasil/com/br/applistamotociclista/controller/ProfissionalController.java b/app/src/main/java/renato/brasil/com/br/applistamotociclista/controller/ProfissionalController.java
+new file mode 100644
+--- /dev/null	
++++ b/app/src/main/java/renato/brasil/com/br/applistamotociclista/controller/ProfissionalController.java	
+@@ -0,0 +1,39 @@
++package renato.brasil.com.br.applistamotociclista.controller;
++
++import java.util.ArrayList;
++import java.util.List;
++
++import renato.brasil.com.br.applistamotociclista.model.Profissional;
++
++public class ProfissionalController {
++
++    private List listProfissionais;
++
++    public List getListaDoProfissionalDesejado() {
++
++        listProfissionais = new ArrayList<Profissional>();
++
++
++        listProfissionais.add(new Profissional("Renato Brasil"));
++        listProfissionais.add(new Profissional("Daril"));
++        listProfissionais.add(new Profissional("Valdir"));
++        listProfissionais.add(new Profissional("Lima"));
++        listProfissionais.add(new Profissional("Robinho"));
++        listProfissionais.add(new Profissional("Enéias"));
++        listProfissionais.add(new Profissional("Lair"));
++        listProfissionais.add(new Profissional("Fernando"));
++        listProfissionais.add(new Profissional("Wagner"));
++
++        return listProfissionais;
++    }
++     public  ArrayList<String> dadosParaSpinner(){
++        ArrayList<String> dados = new ArrayList<>();
++        for (int i = 0; i < getListaDoProfissionalDesejado().size();i++){
++            Profissional objeto = (Profissional) getListaDoProfissionalDesejado().get(i);
++           dados.add( objeto.getNomeDoProfissionalDesejado());
++
++        }
++        return  dados;
++     }
++
++}
+Index: app/src/main/java/renato/brasil/com/br/applistamotociclista/model/Profissional.java
+===================================================================
+diff --git a/app/src/main/java/renato/brasil/com/br/applistamotociclista/model/Profissional.java b/app/src/main/java/renato/brasil/com/br/applistamotociclista/model/Profissional.java
+new file mode 100644
+--- /dev/null	
++++ b/app/src/main/java/renato/brasil/com/br/applistamotociclista/model/Profissional.java	
+@@ -0,0 +1,18 @@
++package renato.brasil.com.br.applistamotociclista.model;
++
++public class Profissional {
++
++    private String nomeDoProfissionalDesejado;
++
++    public Profissional(String nomeDoProfissionalDesejado) {
++        this.nomeDoProfissionalDesejado = nomeDoProfissionalDesejado;
++    }
++
++    public String getNomeDoProfissionalDesejado() {
++        return nomeDoProfissionalDesejado;
++    }
++
++    public void setNomeDoProfissionalDesejado(String nomeDoProfissionalDesejado) {
++        this.nomeDoProfissionalDesejado = nomeDoProfissionalDesejado;
++    }
++}
