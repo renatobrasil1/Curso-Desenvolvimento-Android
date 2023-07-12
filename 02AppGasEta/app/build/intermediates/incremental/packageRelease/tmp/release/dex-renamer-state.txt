@@ -1,4 +1,0 @@
-#Mon Jul 10 11:54:25 BRT 2023
-base.0=C\:\\cursoAndroid_da_udemyProfessorMarcosMaddo_2023\\02AppGasEta\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
