@@ -1,4 +1,4 @@
-package renato.brasil.com.br.applistamotociclista;
+package renato.brasil.com.br.applistamotociclista.view;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import renato.brasil.com.br.applistamotociclista.R;
 import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
 import renato.brasil.com.br.applistamotociclista.controller.ProfissionalController;
 import renato.brasil.com.br.applistamotociclista.model.Pessoa;
