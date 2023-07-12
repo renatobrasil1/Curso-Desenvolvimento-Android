@@ -1,9 +1,9 @@
-package renato.brasil.com.br.applistamotociclista.controller;
+package renato.brasil.com.br.appgaseta.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import renato.brasil.com.br.applistamotociclista.model.Profissional;
+import renato.brasil.com.br.appgaseta.model.Profissional;
 
 public class ProfissionalController {
 

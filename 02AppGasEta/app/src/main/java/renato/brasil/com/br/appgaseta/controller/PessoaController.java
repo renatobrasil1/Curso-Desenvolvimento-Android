@@ -1,10 +1,10 @@
-package renato.brasil.com.br.applistamotociclista.controller;
+package renato.brasil.com.br.appgaseta.controller;
 
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import renato.brasil.com.br.applistamotociclista.model.Pessoa;
+import renato.brasil.com.br.appgaseta.model.Pessoa;
 
 public class PessoaController {
 

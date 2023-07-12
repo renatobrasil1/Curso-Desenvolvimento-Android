@@ -1,13 +1,16 @@
 <resources>
-    <string name="app_name">AppMotoTaxi1601</string>
-    <string name="txt_titulo">Profissionais do Amarelinho</string>
-    <string name="txt_hint_edit_primeiro_nome">Primeiro Nome</string>
-    <string name="txt_hint_edit_sobrenome">Sobre Nome</string>
+    <string name="app_name">AppGasEta</string>
+    <string name="txt_titulo">Gasolina X Etanol</string>
+    <string name="txt_hint_edit_gasolina"> R$ Gasolina</string>
+    <string name="txt_hint_edit_etatnol">R$ ETANOL</string>
     <string name="txt_hint_edit_profissional_desejado">Qual profissional?</string>
     <string name="txt_hint_edit_telefone_de_contato">Telefone de Contato</string>
     <string name="txt_btn_limpar">LIMPAR</string>
+    <string name="txt_btn_calcular">CALCULAR</string>
+    <string name="txt_btn_resultado">Resultado</string>
+    <string name="txt_btn_selecione_um_profissional">Selecione um Profissional</string>
     <string name="txt_btn_salvar">SALVAR</string>
     <string name="txt_btn_finalizar">FINALIZAR</string>
-    <string name="txt_selecione_um_profissional">Selecione um Profissional...</string>
-    <string name="selecione_um_profissional">Selecione um Profissional</string>
+    <string name="todo">TODO</string>
+
 </resources>

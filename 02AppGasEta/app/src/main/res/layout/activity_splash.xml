@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/amarelo"
+    android:background="@color/teal_700"
     tools:context=".view.SplashActivity">
 
     <TextView
-        android:id="@+id/sejabemvindo"
+        android:id="@+id/sempreomelhor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="130dp"
         android:background="@color/teal_200"
         android:gravity="center"
-        android:text="Seja Bem Vindo ao Moto Taxi 1601"
+        android:text="Sempre Oferencendo o Melhor"
         android:textColor="@color/black"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,18 +36,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.702" />
 
-    <ImageView
-        android:id="@+id/imglog"
-        android:layout_width="370dp"
-        android:layout_height="264dp"
-        android:layout_marginBottom="232dp"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/mototaxi1601" />
-
     <TextView
         android:id="@+id/somosespecialista"
         android:layout_width="0dp"
@@ -56,14 +45,24 @@
         android:layout_marginEnd="16dp"
         android:background="@color/teal_200"
         android:gravity="center"
-        android:text="Somos Especialista em transporte..."
+        android:text="A sua Melhor Opção..."
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:background="@color/corBotoes"
+        android:layout_marginBottom="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imglog"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintTop_toBottomOf="@+id/sempreomelhor"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

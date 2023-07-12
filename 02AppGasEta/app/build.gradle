@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'renato.brasil.com.br.applistamotociclista'
+    namespace 'renato.brasil.com.br.appgaseta'
     compileSdk 33
 
     defaultConfig {
-        applicationId "renato.brasil.com.br.applistamotociclista"
+        applicationId "renato.brasil.com.br.appgaseta"
         minSdk 26
         targetSdk 33
         versionCode 1

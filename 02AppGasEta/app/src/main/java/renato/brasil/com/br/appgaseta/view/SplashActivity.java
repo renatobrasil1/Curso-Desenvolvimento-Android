@@ -1,4 +1,4 @@
-package renato.brasil.com.br.applistamotociclista.view;
+package renato.brasil.com.br.appgaseta.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import renato.brasil.com.br.applistamotociclista.R;
+import renato.brasil.com.br.appgaseta.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -24,7 +24,10 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent telaPrincipal = new Intent(SplashActivity.this, MainActivity.class);
+                Intent telaPrincipal = new Intent(
+                        SplashActivity.this,
+                        GasEtaActivity.class);
+
                 startActivity(telaPrincipal);
                 finish();
 

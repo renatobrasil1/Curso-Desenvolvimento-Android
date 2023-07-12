@@ -19,6 +19,12 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".view.GasEtaActivity"
+            android:exported="false">
+
+        </activity>
+
         <activity
             android:name=".view.SplashActivity"
             android:exported="true">
