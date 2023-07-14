@@ -33,7 +33,6 @@ public class ProfissionalController {
             Profissional objeto = (Profissional) getListaDeProfissionais().get(i);
             dados.add(objeto.getNomeDoprofissionalDesejado());
         }
-
         return  dados;
     }
 }
