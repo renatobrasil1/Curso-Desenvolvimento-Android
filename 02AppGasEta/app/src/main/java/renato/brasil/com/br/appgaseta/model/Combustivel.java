@@ -15,6 +15,7 @@ public class Combustivel {
     }
 
     public void setPrecoDoCombustivel(double precoDoCombustivel) {
+
         this.precoDoCombustivel = precoDoCombustivel;
     }
 
