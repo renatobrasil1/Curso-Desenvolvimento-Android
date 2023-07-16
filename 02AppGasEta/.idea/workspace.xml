@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc3ddaeb-974c-49f6-b508-fecac4fabb3e" name="Changes" comment="&quot;aplicativo GasEta_v01.1 ok &quot;esta fazendo calculo com validação&quot;">
+    <list default="true" id="bc3ddaeb-974c-49f6-b508-fecac4fabb3e" name="Changes" comment="&quot;aplicativo GasEta_v01.02 ok &quot;Criado SharedPrefences&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,10 +19,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/ProfissionalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/ProfissionalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Combustivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Combustivel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/SplashActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -64,9 +65,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="PROJECT_TRUSTED_KEY" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
