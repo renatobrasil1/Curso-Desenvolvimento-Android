@@ -15,7 +15,7 @@
         android:layout_marginBottom="130dp"
         android:background="@color/amarelo"
         android:gravity="center"
-        android:text="Sempre Oferecendo o Melhor"
+        android:text="Sempre Oferecendo "
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
