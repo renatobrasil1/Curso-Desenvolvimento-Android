@@ -12,10 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Applistamotociclista"
         tools:targetApi="31">
-
         <activity android:name=".view.GasEtaActivity"
             android:exported="false">
-
         </activity>
 
         <activity

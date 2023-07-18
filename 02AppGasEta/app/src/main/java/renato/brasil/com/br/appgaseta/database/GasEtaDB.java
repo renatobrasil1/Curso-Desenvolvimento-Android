@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class GasEtaDB extends SQLiteOpenHelper {
 
-    public  static  final  String DB_NAME = "gaseta.db";
+    public  static  final  String DB_NAME="gaseta.db";
     public static  final int DB_VERSION = 1;
 
     Cursor cursor;
@@ -24,11 +24,10 @@ public class GasEtaDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String sqlTabelaCombustivel
-                = "CREATE TABLE Combustivel (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "nomeDoCombustivel TEXT, " +
-                "precoDoCombustivel REAL, " +
-                "melhorOpcao TEXT)"; // uma obsevaçao nao existe double no sqlLITE
+        String sqlTabelaCombustivel = "CREATE TABLE Combustivel (id INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
+                " nomeDoCombustivel, TEXT \n" +
+                " precoDoCombustivel, REAL\n " +
+                "melhorOpcao, TEXT\n )"; // uma obsevaçao nao existe double no sqlLITE
                   db.execSQL(sqlTabelaCombustivel);
 
     }
