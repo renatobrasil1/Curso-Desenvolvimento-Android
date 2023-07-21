@@ -9,21 +9,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc3ddaeb-974c-49f6-b508-fecac4fabb3e" name="Changes" comment="&quot;cria databases,no emulador, porem no celular ele cria e some da tela.">
+    <list default="true" id="bc3ddaeb-974c-49f6-b508-fecac4fabb3e" name="Changes" comment="&quot;Limpando o projeto activity_main e activity_spinner.">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/PessoaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/ProfissionalController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Profissional.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/CombustivelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/CombustivelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/database/GasEtaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/database/GasEtaDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +68,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -97,6 +102,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="com.android.tools.idea.sqlite.queryhistory" value="SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel LIMIT 2&#10;SELECT  nomeDoCombustivel FROM Combustivel&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.35, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(id,nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(2,&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;DELETE from Combustivel &#10;where id = 2&#10;UPDATE Combustivel&#10;SET nomeDoCombustivel = &quot;Gasolina Azul&quot;," />
     <property name="ignore.preview.features.used" value="true" />
     <property name="last_opened_file_path" value="D:/Desen_Brasil_Android" />
     <property name="settings.editor.selected.configurable" value="experimental" />
@@ -221,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689961468709</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Limpando o projeto.">
+      <created>1689962668118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689962668118</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;Limpando o projeto activity_main e activity_spinner.">
+      <created>1689963263630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689963263630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +322,8 @@
     <MESSAGE value="&quot;aplicativo GasEta_v01.1 ok &quot;esta fazendo calculo com validação&quot;" />
     <MESSAGE value="&quot;cria databases, porem não aparece no App Inspection." />
     <MESSAGE value="&quot;cria databases,no emulador, porem no celular ele cria e some da tela." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;cria databases,no emulador, porem no celular ele cria e some da tela." />
+    <MESSAGE value="&quot;Limpando o projeto." />
+    <MESSAGE value="&quot;Limpando o projeto activity_main e activity_spinner." />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Limpando o projeto activity_main e activity_spinner." />
   </component>
 </project>
