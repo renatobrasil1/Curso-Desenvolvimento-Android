@@ -21,8 +21,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/CombustivelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/controller/CombustivelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/database/GasEtaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/database/GasEtaDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Combustivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/model/Combustivel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/GasEtaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/renato/brasil/com/br/appgaseta/view/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gaseta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gaseta.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,9 +105,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="com.android.tools.idea.sqlite.queryhistory" value="select COUNT (*) from Combustivel&#10;select * from Combustivel&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel LIMIT 2&#10;SELECT  nomeDoCombustivel FROM Combustivel&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.35, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(id,nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(2,&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;DELETE from Combustivel &#10;where id = 2" />
+    <property name="com.android.tools.idea.sqlite.queryhistory" value="select *from Combustivel&#10;select COUNT (*) from Combustivel&#10;select * from Combustivel&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel &#10;where id&gt;2 and id &lt;7&#10;SELECT  nomeDoCombustivel FROM Combustivel LIMIT 2&#10;SELECT  nomeDoCombustivel FROM Combustivel&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.35, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(id,nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(2,&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;INSERT INTO&#10;Combustivel&#10;(nomeDoCombustivel,precoDoCombustivel, melhorOpcao)&#10;VALUES&#10;(&quot;Gasolina&quot;,5.25, &quot;Abastecer com Etanol&quot;)&#10;DELETE from Combustivel " />
     <property name="ignore.preview.features.used" value="true" />
-    <property name="last_opened_file_path" value="D:/Desen_Brasil_Android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
@@ -250,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689982655953</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&quot;Salvando e Listando dados no banco de dados.">
+      <created>1690035455849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690035455849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

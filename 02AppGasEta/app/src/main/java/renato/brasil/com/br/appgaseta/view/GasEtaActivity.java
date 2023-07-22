@@ -54,6 +54,14 @@ public class GasEtaActivity extends AppCompatActivity {
 
         dados = controller.getListaDeDados(); // buscando os dados no banco
 
+             Combustivel objAlteracao = dados.get(1);
+
+             objAlteracao.setNomeDoCombustivel("** Etanol**");
+             objAlteracao.setPrecoDoCombustivel(5.97);
+             objAlteracao.setMelhorOpcao("** Abasteça com Etanol**");
+
+          //   controller.alterar(objAlteracao);
+        controller.deletar(2);
 
         editGasolina = findViewById(R.id.editGasolina);
         editEtanol = findViewById(R.id.editEtanol);
@@ -64,17 +72,6 @@ public class GasEtaActivity extends AppCompatActivity {
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
 
-
-        btnLimpar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                editGasolina.setText("");
-                editEtanol.setText("");
-
-                btnSalvar.setEnabled(false);
-                controller.limpar();
-            }
-        });
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -98,11 +95,11 @@ public class GasEtaActivity extends AppCompatActivity {
                     precoGasolina = Double.parseDouble(editGasolina.getText().toString());
                     precoEtanol = Double.parseDouble(editEtanol.getText().toString());
 
-                      melhorOpcao = UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol);
+                    melhorOpcao = UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol);
 
-                      textResultado.setText(melhorOpcao);
+                    textResultado.setText(melhorOpcao);
 
-                      btnSalvar.setEnabled(true);
+                    btnSalvar.setEnabled(true);
 
 
                 }else{
@@ -114,39 +111,47 @@ public class GasEtaActivity extends AppCompatActivity {
 
             }
         });
-
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                  // TODO: EditText inputType
+                // TODO: EditText inputType
 
 
 
-                  combustivelGasolina = new Combustivel();
-                  combustivelEtanol = new Combustivel();
+                combustivelGasolina = new Combustivel();
+                combustivelEtanol = new Combustivel();
 
-                  combustivelGasolina.setNomeDoCombustivel("Gasolina");
-                  combustivelGasolina.setPrecoDoCombustivel(precoGasolina);
+                combustivelGasolina.setNomeDoCombustivel("Gasolina");
+                combustivelGasolina.setPrecoDoCombustivel(precoGasolina);
 
-                  combustivelEtanol.setNomeDoCombustivel("Etanol");
-                  combustivelEtanol.setPrecoDoCombustivel(precoEtanol);
+                combustivelEtanol.setNomeDoCombustivel("Etanol");
+                combustivelEtanol.setPrecoDoCombustivel(precoEtanol);
 
-                  combustivelGasolina.setMelhorOpcao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
-                  combustivelEtanol.setMelhorOpcao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
-
-
-                  controller.salvar(combustivelGasolina);
-                  controller.salvar(combustivelEtanol);
+                combustivelGasolina.setMelhorOpcao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
+                combustivelEtanol.setMelhorOpcao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
 
 
+                controller.salvar(combustivelGasolina);
+                controller.salvar(combustivelEtanol);
 
-                  int parada = 0;
+
+
+                int parada = 0;
 
 
             }
         });
+        btnLimpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editGasolina.setText("");
+                editEtanol.setText("");
 
+                btnSalvar.setEnabled(false);
+                controller.limpar();
+            }
+        });
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

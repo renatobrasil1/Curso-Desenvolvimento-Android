@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,12 +80,34 @@ public class GasEtaDB extends SQLiteOpenHelper {
 
 
         } else{
-
-
+            //false
         }
 
         return lista;
 
+    }
+
+    public  void alterarObjeto(String tabela,
+                               ContentValues dados){
+
+        // ID do registro para ser alterado
+        // updte TABLE set campo=novoDados WHERE id=?
+
+        int id = dados.getAsInteger("id"); // aqui o id vem como string , ai é transformado comoo inteiro
+
+           db.update(tabela,dados,"id=?",
+                   new String[]{Integer.toString(id)});
+    }
+
+
+    public  void deletarObjeto(String tabela,
+                               int  id){
+
+        // ID do registro para ser deletado
+        // delete from TABLE set campo=novoDados WHERE id=?
+
+         db.delete(tabela,"id=?",
+                new String[]{Integer.toString(id)});
     }
 
 }
