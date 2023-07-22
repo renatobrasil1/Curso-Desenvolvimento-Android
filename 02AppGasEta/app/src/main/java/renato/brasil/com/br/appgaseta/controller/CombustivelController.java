@@ -3,6 +3,9 @@ package renato.brasil.com.br.appgaseta.controller;
 import android.content.ContentValues;
 import android.content.SharedPreferences;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import renato.brasil.com.br.appgaseta.database.GasEtaDB;
 import renato.brasil.com.br.appgaseta.model.Combustivel;
 import renato.brasil.com.br.appgaseta.view.GasEtaActivity;
@@ -23,7 +26,8 @@ public class CombustivelController extends GasEtaDB {
         dadosPreferences = preferences.edit();
     }
 
-    public  void  salvar(Combustivel combustivel){
+    public void salvar(Combustivel combustivel){
+
         ContentValues dados = new ContentValues();
 
         dadosPreferences.putString("combustivel", combustivel.getNomeDoCombustivel());
@@ -38,7 +42,13 @@ public class CombustivelController extends GasEtaDB {
 
         salvarObjeto("Combustivel",dados);
 
+
     }
+
+    public  List<Combustivel> getListaDeDados(){
+        return  listarDados();
+    }
+
     public  void limpar(){
         dadosPreferences.clear();
         dadosPreferences.apply();
