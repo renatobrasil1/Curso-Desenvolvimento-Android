@@ -10,7 +10,7 @@ import renato.brasil.com.br.applistamotociclista.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    public static final int TIME_OUT_SPLASH = 3000;
+    public static final int TIME_OUT_SPLASH = 7000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

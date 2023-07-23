@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
         profissionalController = new ProfissionalController();
          nomesDosProfissionais = profissionalController.dadosParaSpinner();
 
-        pessoa = new PessoaController(); // criando um objeto pessoa
+        pessoa = new Pessoa(); // criando um objeto pessoa
 
         //controller.buscar(pessoa);
 
