@@ -1,4 +1,4 @@
-package renato.brasil.com.br.appgaseta.view;
+package renato.brasil.com.br.applistamotociclista.view;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -11,14 +11,16 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
-import renato.brasil.com.br.appgaseta.R;
-import renato.brasil.com.br.appgaseta.controller.PessoaController;
-import renato.brasil.com.br.appgaseta.controller.ProfissionalController;
-import renato.brasil.com.br.appgaseta.model.Pessoa;
+import renato.brasil.com.br.applistamotociclista.R;
+import renato.brasil.com.br.applistamotociclista.controller.PessoaController;
+import renato.brasil.com.br.applistamotociclista.controller.ProfissionalController;
+import renato.brasil.com.br.applistamotociclista.model.Pessoa;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     SharedPreferences preferences;
     public static final String NOME_PREFERENCES = "pref_listamotociclista";
@@ -42,6 +44,7 @@ public class MainActivity extends Activity {
     Button btnLimpar;
     Button btnSalvar;
     Button btnFinalizar;
+
       Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,7 @@ public class MainActivity extends Activity {
          SharedPreferences.Editor listaVip = preferences.edit(); // criando o editor
 
 
-       controller = new PessoaController(); // criando o objeto controller
+       controller = new PessoaController(MainActivity.this); // criando o objeto controller
         controller.toString();
 
         profissionalController = new ProfissionalController();
@@ -60,7 +63,7 @@ public class MainActivity extends Activity {
 
         pessoa = new Pessoa(); // criando um objeto pessoa
 
-        //controller.buscar(pessoa);
+      //  controller.buscar(pessoa);
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobreNome = findViewById(R.id.editSobreNome);
@@ -80,12 +83,14 @@ public class MainActivity extends Activity {
         // Adpter
         // Layout
         // Iniciar o adapter ao Sprinner - A lista gerar
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
-        profissionalController.dadosParaSpinner());
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1,
+                profissionalController.dadosParaSpinner());
 
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_1);
 
               spinner.setAdapter((adapter));
+
 
         // pegando o clik do botão
         btnLimpar.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +100,7 @@ public class MainActivity extends Activity {
                 editSobreNome.setText("");
                 editQualProfissional.setText("");
                 editTelefoneDeContato.setText("");
+                controller.limpar();
             }
         });
 

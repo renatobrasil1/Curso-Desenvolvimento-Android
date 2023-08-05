@@ -28,7 +28,7 @@
         android:layout_margin="16dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/txt_hint_edit_gasolina"
+        android:hint="@string/txt_hint_edit_primeiro_nome"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
@@ -43,7 +43,7 @@
         android:layout_margin="16dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/txt_hint_edit_etanol"
+        android:hint="@string/txt_hint_edit_sobrenome"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
@@ -87,10 +87,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="281dp"
-        android:layout_height="0dp"
+        android:layout_width="321dp"
+        android:layout_height="57dp"
         android:layout_marginTop="329dp"
         android:layout_marginBottom="38dp"
+        android:gravity="center"
         android:text="@string/selecione_um_profissional"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -153,9 +154,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtTituloApp"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.884" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

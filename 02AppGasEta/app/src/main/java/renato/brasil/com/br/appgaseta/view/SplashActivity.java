@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import renato.brasil.com.br.appgaseta.R;
+import renato.brasil.com.br.appgaseta.database.GasEtaDB;
 
 public class SplashActivity extends AppCompatActivity {
 
-    public static final int TIME_OUT_SPLASH = 4000;
+    public static final int TIME_OUT_SPLASH = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +25,12 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                GasEtaDB db = new GasEtaDB(SplashActivity.this);
+
                 Intent telaPrincipal = new Intent(
-                        SplashActivity.this, GasEtaActivity.class);
+                        SplashActivity.this,
+                        GasEtaActivity.class);
+
                 startActivity(telaPrincipal);
                 finish();
 

@@ -1,4 +1,4 @@
-package renato.brasil.com.br.appgaseta.model;
+package renato.brasil.com.br.applistamotociclista.model;
 
 public class Profissional {
 
